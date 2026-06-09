@@ -4,80 +4,269 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youlia Tzaneva | UX Designer Portfolio</title>
-    <style>
-        /* Basic Styling to make it look clean */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        header {
-            background: #f4f4f4;
-            padding: 2rem;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            padding: 1rem;
-            background: #fff;
-            border-bottom: 1px solid #ddd;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            padding: 2rem;
-        }
-        .project-card {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin-bottom: 2rem;
-        }
-        footer {
-            text-align: center;
-            padding: 2rem;
-            font-size: 0.9rem;
-            color: #777;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Nunito:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
+    <div class="page" data-node-id="2280:676" data-name="Home">
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
+        <!-- Hero -->
+        <section class="section-dark hero container" data-node-id="2280:677">
+            <header class="nav" data-node-id="2280:678">
+                <a href="#" class="script-logo">Youlia Tzaneva</a>
+                <nav class="nav-links" aria-label="Main navigation">
+                    <a href="#work">Work</a>
+                    <a href="#about">About</a>
+                    <a href="#resume">Resume</a>
+                </nav>
+                <a href="#contact" class="btn btn-tan btn-tan--nav">Contact</a>
+            </header>
 
-    <header>
-        <h1>Hi, I'm Youlia Tzaneva.]</h1>
-        <p>UX Designer focused on creating intuitive, human-centered experiences.</p>
-    </header>
+            <div class="hero-intro" data-node-id="2280:686">
+                <div data-node-id="2280:687">
+                    <h1 class="heading-display heading-display--xl" data-node-id="2280:688">
+                        Thoughtful design,<br>smarter experiences
+                    </h1>
+                    <div class="hero-intro__text" data-node-id="2280:689">
+                        <p>I'm a UX/UI, product, and web designer with 5+ years of experience designing complex digital products. I bring curiosity, systems thinking, and a user-first mindset to every challenge—balancing business goals, stakeholder needs, and real human experiences.</p>
+                        <p>As AI reshapes the way we build products, I'm thoughtfully integrating it into my workflow to move faster, think deeper, and design more intentional experiences without losing the human perspective.</p>
+                    </div>
+                    <img src="assets/images/objects.png" alt="" class="hero-flower" data-node-id="2288:172">
+                </div>
 
-    <div class="container" id="work">
-        <h2>Projects</h2>
-        
-        <div class="project-card">
-            <h3>Project One Title</h3>
-            <p>A brief description of the problem you solved and your role.</p>
-            <a href="#">View Case Study →</a>
-        </div>
+                <div class="hero-cards" data-node-id="2280:690">
+                    <article class="value-card" data-node-id="2280:691">
+                        <div class="value-card__header">
+                            <div class="value-card__title-row">
+                                <img src="assets/images/icon-tree.png" alt="" class="value-card__icon" width="32" height="32">
+                                <h2 class="value-card__title">Systems Thinking</h2>
+                            </div>
+                            <p class="script-accent script-accent--sm">Designing beyond individual screens</p>
+                        </div>
+                        <p class="value-card__body">I approach design as part of a bigger system—considering how interactions, business goals, content, and user needs connect to create experiences that feel intuitive, scalable, and cohesive.</p>
+                    </article>
 
-        <div class="project-card">
-            <h3>Project Two Title</h3>
-            <p>A brief description of the problem you solved and your role.</p>
-            <a href="#">View Case Study →</a>
-        </div>
+                    <article class="value-card" data-node-id="2280:699">
+                        <div class="value-card__header">
+                            <div class="value-card__title-row">
+                                <img src="assets/images/icon-users.png" alt="" class="value-card__icon" width="32" height="32">
+                                <h2 class="value-card__title">User-First Approach</h2>
+                            </div>
+                            <p class="script-accent script-accent--sm">Empathy backed by critical thinking</p>
+                        </div>
+                        <p class="value-card__body">Great experiences start with understanding people. I combine research, communication, and thoughtful decision-making to uncover what users actually need.</p>
+                    </article>
+
+                    <article class="value-card" data-node-id="2280:707">
+                        <div class="value-card__header">
+                            <div class="value-card__title-row">
+                                <img src="assets/images/icon-ai.png" alt="" class="value-card__icon" width="32" height="32">
+                                <h2 class="value-card__title">AI-Facilitated Workflow</h2>
+                            </div>
+                            <p class="script-accent script-accent--sm">Using AI thoughtfully, not blindly</p>
+                        </div>
+                        <p class="value-card__body">I use AI to speed up exploration, challenge assumptions, and improve decision-making—freeing up more time for strategic thinking, creativity, and solving meaningful problems.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Work -->
+        <section class="section-cream container" id="work" data-node-id="2280:715">
+            <div class="featured-header" data-node-id="2280:716">
+                <h2 class="heading-display heading-display--lg" data-node-id="2280:717">Featured work</h2>
+                <p data-node-id="2280:718">A curated collection of recent projects highlighting my expertise in product design, web applications, and mobile experiences.</p>
+            </div>
+
+            <div class="projects" data-node-id="2280:719">
+                <!-- Barnebys -->
+                <article class="project" data-node-id="2280:720">
+                    <div class="project__content" data-node-id="2280:721">
+                        <div class="project__tags" data-node-id="2280:722">
+                            <span class="tag">Auction marketplace</span>
+                            <span class="tag">Design system</span>
+                            <span class="tag">Redesign</span>
+                        </div>
+                        <div data-node-id="2280:729">
+                            <p class="project__desc">Leading the entire redesign of an auction marketplace with a focus on modern, timeless design.</p>
+                            <a href="#" class="script-link">See case study&gt;</a>
+                        </div>
+                    </div>
+                    <div class="project__divider-v"></div>
+                    <div class="project__divider"></div>
+                    <h3 class="heading-display heading-display--project project__title" data-node-id="2280:734">Barnebys</h3>
+                    <div class="project__images" data-node-id="2280:735">
+                        <img src="assets/images/homepage1.png" alt="Barnebys homepage" class="project-img project-img--main">
+                        <img src="assets/images/screenshot-20210906.png" alt="Barnebys screen" class="project-img project-img--side">
+                        <img src="assets/images/screenshot-20210907.png" alt="Barnebys mobile" class="project-img project-img--small">
+                    </div>
+                </article>
+
+                <!-- DALUMA -->
+                <article class="project project--right" data-node-id="2280:739">
+                    <div class="project__content" data-node-id="2280:740">
+                        <div class="project__tags" data-node-id="2280:741">
+                            <span class="tag">E-commerce</span>
+                            <span class="tag">Conversion</span>
+                            <span class="tag">Heatmaps</span>
+                        </div>
+                        <div data-node-id="2280:748">
+                            <p class="project__desc">Redesigning a holistic health e-commerce platform to improve brand understanding and conversion rates.</p>
+                            <a href="#" class="script-link">See case study&gt;</a>
+                        </div>
+                    </div>
+                    <div class="project__divider-v"></div>
+                    <div class="project__divider"></div>
+                    <h3 class="heading-display heading-display--project project__title" data-node-id="2280:753">DALUMA</h3>
+                    <div class="project__images" data-node-id="2280:1170">
+                        <img src="assets/images/homepage1.png" alt="DALUMA homepage" class="project-img project-img--main">
+                        <img src="assets/images/screenshot-20210906.png" alt="DALUMA screen" class="project-img project-img--side">
+                        <img src="assets/images/screenshot-20210907.png" alt="DALUMA mobile" class="project-img project-img--small">
+                    </div>
+                </article>
+
+                <!-- Oak National Academy -->
+                <article class="project project--oak" data-node-id="2280:758">
+                    <div class="project__content" data-node-id="2280:759">
+                        <div class="project__tags" data-node-id="2280:760">
+                            <span class="tag">Online education</span>
+                            <span class="tag">User personas</span>
+                            <span class="tag">User testing</span>
+                        </div>
+                        <div data-node-id="2280:767">
+                            <p class="project__desc">Making learning more accessible in a remote digital environment, saving teachers time spent on lesson planning, and assisting a broad spectrum of users.</p>
+                            <a href="#" class="script-link">See case study&gt;</a>
+                        </div>
+                    </div>
+                    <div class="project__divider-v"></div>
+                    <div class="project__divider"></div>
+                    <h3 class="heading-display heading-display--project project__title project__title--oak" data-node-id="2280:772">Oak National Academy</h3>
+                    <div class="project__images" data-node-id="2280:773">
+                        <img src="assets/images/test-results.png" alt="Oak National Academy test results" class="project-img project-img--oak-1">
+                        <img src="assets/images/screenshot-oak-1.png" alt="Oak National Academy screen" class="project-img project-img--oak-3">
+                        <img src="assets/images/screenshot-oak-2.png" alt="Oak National Academy dashboard" class="project-img project-img--oak-2">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="section-dark container testimonials" data-node-id="2280:777">
+            <h2 class="heading-display heading-display--lg testimonials__title" data-node-id="2280:779">In their words</h2>
+
+            <div class="testimonials__grid" data-node-id="2280:780">
+                <div data-node-id="2280:781">
+                    <blockquote class="testimonial" data-node-id="2280:782">
+                        <p class="testimonial__quote">"Youlia's been fantastic for us at Oak National Academy, supporting multiple development squads across the design lifecycle, working directly with Product Managers and developers on discovery, UX flows and detailed UI design. A valuable addition to any team!"</p>
+                        <footer class="testimonial__author">
+                            <p class="script-accent script-accent--md">Will Gayne</p>
+                            <p class="testimonial__role">Director of Product Strategy &amp; IMPACT - Oak National Academy</p>
+                        </footer>
+                    </blockquote>
+                    <div class="testimonial__divider"></div>
+
+                    <blockquote class="testimonial" data-node-id="2280:788">
+                        <p class="testimonial__quote testimonial__quote--lg">"Youlia consistently executes her work before deadlines while keeping our long-term goals in mind, truly embodying our mission to identify the problem before tackling the solution. She stands out for remarkable work ethics through kindness, diligence, and ambition. She has created significant value and shown outstanding efficiency in delivering results."</p>
+                        <footer class="testimonial__author">
+                            <p class="script-accent script-accent--md">David J. Kugler</p>
+                            <p class="testimonial__role">Founder &amp; CEO - DALUMA</p>
+                        </footer>
+                    </blockquote>
+                    <div class="testimonial__divider"></div>
+
+                    <blockquote class="testimonial" data-node-id="2280:794">
+                        <p class="testimonial__quote">"Youlia is an effective UX/UI designer and has delivered timely outputs throughout our work together on the Ecosy Travel MVP. She communicated well at all stages of the process and, as the only designer working on the project, led and managed this work package independently. She is very easy to work with and completed the brief as requested."</p>
+                        <footer class="testimonial__author">
+                            <p class="script-accent script-accent--md">Rebecca Thompson</p>
+                            <p class="testimonial__role">Founder - Ecosy Travel</p>
+                        </footer>
+                    </blockquote>
+                </div>
+
+                <div data-node-id="2280:799">
+                    <blockquote class="testimonial" data-node-id="2280:800">
+                        <p class="testimonial__quote testimonial__quote--md">"So glad I found Youlia! She has designed 2 web apps for me over the last 6 months and has really helped me with all aspects, UX, design &amp; brand. Hope to work with her again soon! She is a clear communicator, efficient worker and has amazing attention to detail."</p>
+                        <footer class="testimonial__author">
+                            <p class="script-accent script-accent--md">Tim Plummer</p>
+                            <p class="testimonial__role">Co-Founder &amp; CTO - Coconuts.network</p>
+                        </footer>
+                    </blockquote>
+                    <div class="testimonial__divider"></div>
+
+                    <blockquote class="testimonial" data-node-id="2280:806">
+                        <p class="testimonial__quote">"Youlia joined the team at an early stage of the startup and has been an incredible asset. With her critical questions and the rare combination of business understanding and design skills, she was a key enabler in the development of the prototype and MVP. She is a real gain to any cross-functional team, I thank her very much for her dedication!"</p>
+                        <footer class="testimonial__author">
+                            <p class="script-accent script-accent--md">Maximilian Schmider</p>
+                            <p class="testimonial__role">Founder - Beambar</p>
+                        </footer>
+                    </blockquote>
+                    <div class="testimonial__divider"></div>
+
+                    <blockquote class="testimonial" data-node-id="2280:812">
+                        <p class="testimonial__quote testimonial__quote--lg">"It has been a pleasure mentoring Youlia. She was working in very different areas. Youlia collaborated [with our team] in problem solving, modeling &amp; analyzing flows, building concepts and translating them into useful experiences, creating versions and even sharing with customers and peers efficiently. We were happy to have her as part of our crew and share valuable knowledge."</p>
+                        <footer class="testimonial__author">
+                            <p class="script-accent script-accent--md">Javier Sánchez Mesa</p>
+                            <p class="testimonial__role">Product Manager - BeHappy</p>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="section-cream container about" id="about" data-node-id="2280:817">
+            <div class="about__photo" data-node-id="2280:818">
+                <img src="assets/images/portrait.png" alt="Youlia Tzaneva">
+            </div>
+            <div class="about__content" data-node-id="2280:819">
+                <h2 class="script-accent script-accent--lg" data-node-id="2280:820">Hi, I'm Youlia!</h2>
+                <p data-node-id="2280:821">I'm someone who's naturally curious — about people, cultures, and how things work.
+
+I've lived, studied, and worked across Europe, which has shaped how I think and how I design: always with empathy, clarity, and a desire to make things genuinely useful.
+
+Outside of design, I spend my time planning my next adventure, learning new languages, playing music, or cooking something overly ambitious.
+
+Travel has taught me to stay open; design has taught me to stay intentional. To me, great design (and life) starts with curiosity and ends with understanding.</p>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section-dark container contact" id="contact" data-node-id="2280:822">
+            <div class="contact__left" data-node-id="2280:823">
+                <div data-node-id="2280:824">
+                    <h2 class="contact__heading" data-node-id="2280:825">
+                        Let's build something <span class="text-tan">great</span> together.
+                    </h2>
+                    <p class="text-tan" data-node-id="2280:826">A systematic approach to solving complex problems, ensuring every decision is backed by research and user needs.</p>
+                    <p class="contact__email" data-node-id="2280:827">
+                        <a href="mailto:youlia.tzaneva@gmail.com">youlia.tzaneva@gmail.com</a>
+                    </p>
+                </div>
+                <div class="contact__social" data-node-id="2280:828">
+                    <a href="#" aria-label="LinkedIn"><img src="assets/images/icon-linkedin.png" alt=""></a>
+                    <a href="#" aria-label="Read CV"><img src="assets/images/icon-readcv.png" alt=""></a>
+                    <a href="#" aria-label="Cooking"><img src="assets/images/icon-chef.png" alt=""></a>
+                </div>
+            </div>
+
+            <form class="contact__form" data-node-id="2280:835" action="#" method="post">
+                <div class="form-field" data-node-id="2280:836">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" class="form-input" placeholder="John Doe">
+                </div>
+                <div class="form-field" data-node-id="2280:841">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="john@example.com">
+                </div>
+                <div class="form-field" data-node-id="2280:846">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" class="form-input form-input--message" placeholder="Tell me about your project..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-tan btn-tan--wide" data-node-id="2280:926">Send message</button>
+            </form>
+        </section>
     </div>
-
-    <footer>
-        <p>&copy; 2026 Youlia Tzaneva. Built with GitHub Pages.</p>
-    </footer>
-
 </body>
 </html>
