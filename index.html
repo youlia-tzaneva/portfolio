@@ -265,22 +265,25 @@ Travel has taught me to stay open; design has taught me to stay intentional. To 
                 </div>
             </div>
 
-            <form class="contact__form" data-node-id="2280:835" action="#" method="post">
+            <form class="contact__form" data-node-id="2280:835" novalidate>
+                <input type="text" name="_honey" class="form-honey" tabindex="-1" autocomplete="off" aria-hidden="true">
                 <div class="form-field" data-node-id="2280:836">
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name" class="form-input" placeholder="John Doe">
+                    <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required autocomplete="name">
                 </div>
                 <div class="form-field" data-node-id="2280:841">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" class="form-input" placeholder="john@example.com">
+                    <input type="email" id="email" name="email" class="form-input" placeholder="john@example.com" required autocomplete="email">
                 </div>
                 <div class="form-field" data-node-id="2280:846">
                     <label for="message">Message</label>
-                    <textarea id="message" name="message" class="form-input form-input--message" placeholder="Tell me about your project..."></textarea>
+                    <textarea id="message" name="message" class="form-input form-input--message" placeholder="Tell me about your project..." required></textarea>
                 </div>
+                <p class="form-status" role="status" aria-live="polite"></p>
                 <button type="submit" class="btn btn-tan btn-tan--wide" data-node-id="2280:926">Send message</button>
             </form>
         </section>
     </div>
+    <script src="js/contact-form.js"></script>
 </body>
 </html>
