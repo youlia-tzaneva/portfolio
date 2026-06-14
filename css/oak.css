@@ -1,0 +1,459 @@
+/* Case Study - Oak (2276:447) */
+
+:root {
+  --oak-bg: #fdfbf8;
+  --oak-content-px: 300px;
+  --oak-image-px: 400px;
+  --oak-section-gap: 60px;
+  --oak-block-gap: 24px;
+  --oak-meta-gap: 60px;
+  --oak-intro-width: 765px;
+  --oak-meta-width: 297px;
+}
+
+.page--oak {
+  background: var(--oak-bg);
+  color: var(--color-black);
+}
+
+/* Nav — light background variant */
+.oak-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 40px var(--section-padding);
+  box-sizing: border-box;
+}
+
+.oak-nav .nav-links {
+  color: var(--color-black);
+}
+
+/* Hero / intro */
+.oak-hero {
+  display: flex;
+  flex-direction: column;
+  gap: var(--oak-section-gap);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--section-padding);
+  box-sizing: border-box;
+}
+
+.oak-hero__title {
+  font-family: var(--font-serif);
+  font-size: clamp(40px, 5vw, 60px);
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.oak-hero__overview {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--oak-section-gap);
+  position: relative;
+}
+
+.oak-hero__intro {
+  flex: 1 1 var(--oak-intro-width);
+  max-width: var(--oak-intro-width);
+}
+
+.oak-hero__intro-block,
+.oak-meta-block {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.oak-hero__intro-block ul {
+  margin: 0;
+  padding-left: 24px;
+}
+
+.oak-hero__intro-block li {
+  line-height: 1.6;
+}
+
+.oak-hero__sidebar {
+  flex: 0 0 var(--oak-meta-width);
+  max-width: var(--oak-meta-width);
+  display: flex;
+  flex-direction: column;
+  gap: var(--oak-meta-gap);
+}
+
+.oak-hero__divider-v {
+  position: absolute;
+  top: 0;
+  right: calc(var(--oak-meta-width) + 32px);
+  width: 1px;
+  height: 287px;
+  background: var(--color-black);
+  opacity: 0.3;
+}
+
+.oak-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.oak-skills__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+/* Content sections */
+.oak-section {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--section-padding) var(--oak-content-px);
+  box-sizing: border-box;
+}
+
+.oak-section--tight-top {
+  padding-top: 0;
+}
+
+.oak-section__header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--oak-block-gap);
+  margin-bottom: var(--oak-section-gap);
+}
+
+.oak-section__header:only-child {
+  margin-bottom: 0;
+}
+
+.oak-section__header--inline {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--oak-block-gap);
+  margin-bottom: 0;
+}
+
+.oak-section__header--inline .heading-display--lg {
+  flex: 0 0 344px;
+  max-width: 344px;
+}
+
+.oak-section__header--inline p {
+  flex: 1 1 auto;
+  font-size: 20px;
+  line-height: normal;
+}
+
+.oak-section__lead {
+  font-size: 18px;
+  line-height: normal;
+}
+
+.oak-section__body {
+  font-size: 20px;
+  line-height: normal;
+  white-space: pre-wrap;
+}
+
+.oak-section__body p + p {
+  margin-top: 0;
+}
+
+/* Challenge columns */
+.oak-challenge-cols {
+  display: flex;
+  align-items: stretch;
+  gap: 32px;
+}
+
+.oak-challenge-col {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.oak-challenge-col__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.oak-challenge-col ul {
+  margin: 0;
+  padding-left: 24px;
+  font-size: 16px;
+  line-height: normal;
+}
+
+.oak-challenge-col li {
+  margin-bottom: 0;
+}
+
+.oak-challenge-divider {
+  flex: 0 0 1px;
+  width: 1px;
+  background: var(--color-black);
+  opacity: 0.3;
+  align-self: stretch;
+}
+
+/* Success cards */
+.oak-cards {
+  display: flex;
+  gap: 16px;
+  align-items: stretch;
+}
+
+.oak-card {
+  flex: 1 1 0;
+  min-width: 0;
+  background: var(--color-tan);
+  border-radius: 4px;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  text-align: left;
+}
+
+.oak-card__title {
+  font-family: var(--font-serif);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.6;
+  width: 100%;
+}
+
+.oak-card__body {
+  font-size: 16px;
+  line-height: normal;
+  width: 100%;
+}
+
+/* Images */
+.oak-image-section {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--oak-image-px);
+  box-sizing: border-box;
+}
+
+.oak-image-section img {
+  width: 100%;
+  height: auto;
+}
+
+.oak-image-section--crop img {
+  width: 124.71%;
+  max-width: none;
+  margin-left: 0;
+}
+
+.oak-image-wrap {
+  overflow: hidden;
+  width: 100%;
+}
+
+.oak-image-wrap--crop {
+  aspect-ratio: 1113 / 628;
+}
+
+.oak-image-wrap--crop img {
+  width: 124.71%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left top;
+}
+
+/* Impact */
+.oak-impact {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.oak-impact__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.oak-impact__lead {
+  flex: 0 0 270px;
+  max-width: 270px;
+  font-size: 18px;
+  line-height: normal;
+}
+
+.oak-impact__stats {
+  display: flex;
+  gap: 16px;
+  align-items: flex-end;
+  flex: 0 0 417px;
+  max-width: 417px;
+}
+
+.oak-stat {
+  flex: 1 1 0;
+  min-width: 0;
+  text-align: center;
+  padding: 0 16px;
+}
+
+.oak-stat__number {
+  font-family: var(--font-serif);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.oak-stat__label {
+  font-size: 16px;
+  line-height: normal;
+}
+
+.oak-impact__outcomes {
+  font-size: 16px;
+  line-height: normal;
+}
+
+/* Reflection */
+.oak-reflection {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  padding-top: var(--section-padding);
+  padding-bottom: 0;
+}
+
+.oak-reflection__divider {
+  width: 945px;
+  max-width: 100%;
+  height: 1px;
+  background: var(--color-black);
+  opacity: 0.3;
+}
+
+/* Testimonial block */
+.oak-testimonial {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--section-padding) var(--oak-content-px);
+  box-sizing: border-box;
+  background: var(--color-cream);
+}
+
+.oak-testimonial__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  text-align: center;
+}
+
+.oak-testimonial__quote {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.oak-testimonial__author {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.oak-testimonial__role {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  :root {
+    --oak-content-px: 120px;
+    --oak-image-px: 160px;
+  }
+
+  .oak-hero__divider-v {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --oak-content-px: 60px;
+    --oak-image-px: 60px;
+  }
+
+  .oak-hero__overview {
+    flex-direction: column;
+  }
+
+  .oak-hero__intro,
+  .oak-hero__sidebar {
+    flex: 1 1 auto;
+    max-width: none;
+    width: 100%;
+  }
+
+  .oak-section__header--inline {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .oak-section__header--inline .heading-display--lg {
+    flex: none;
+    max-width: none;
+  }
+
+  .oak-challenge-cols {
+    flex-direction: column;
+  }
+
+  .oak-challenge-divider {
+    width: 100%;
+    height: 1px;
+  }
+
+  .oak-cards {
+    flex-direction: column;
+  }
+
+  .oak-impact__row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .oak-impact__lead,
+  .oak-impact__stats {
+    flex: none;
+    max-width: none;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --oak-content-px: 24px;
+    --oak-image-px: 24px;
+  }
+
+  .oak-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .oak-nav .nav-links {
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+}
