@@ -17,6 +17,11 @@
   color: var(--color-black);
 }
 
+.page--oak .script-logo,
+.page--oak .script-accent {
+  font-weight: 400;
+}
+
 /* Nav — light background variant */
 .oak-nav {
   display: flex;
@@ -41,7 +46,7 @@
   gap: var(--oak-section-gap);
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: var(--section-padding);
+  padding: var(--section-padding) 200px;
   box-sizing: border-box;
 }
 
