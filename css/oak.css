@@ -167,6 +167,10 @@
   line-height: normal;
 }
 
+.oak-section:not(.oak-reflection) .oak-section__header .oak-section__lead {
+  text-align: center;
+}
+
 .oak-section__body,
 .oak-reflection .oak-section__lead {
   font-size: 16px;
@@ -175,6 +179,21 @@
 
 .oak-section__body p + p {
   margin-top: 0;
+}
+
+/* Discovery insight callout */
+.oak-discovery__insight {
+  padding: 16px 0;
+  width: 100%;
+}
+
+.oak-discovery__insight-quote {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: clamp(28px, 3.5vw, 40px);
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: center;
 }
 
 /* Challenge columns */
