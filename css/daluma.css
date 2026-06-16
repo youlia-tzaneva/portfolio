@@ -1,0 +1,134 @@
+/* Case Study - DALUMA (2318:307) — overrides on shared oak case study layout */
+
+.page--daluma .oak-challenge-col p {
+  margin: 0;
+  font-size: 16px;
+  line-height: normal;
+}
+
+.oak-section--challenge {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.oak-section--challenge .oak-section__header {
+  margin-bottom: 0;
+}
+
+.oak-section__body--after-cols {
+  margin: 0;
+}
+
+.oak-section--tight-bottom {
+  padding-bottom: 0;
+}
+
+.oak-section--tight-bottom .oak-section__header {
+  margin-bottom: 0;
+}
+
+.oak-image-section--stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding-bottom: 100px;
+}
+
+/* Discovery insight callout */
+.daluma-insight {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.daluma-insight__lead,
+.daluma-insight__follow {
+  margin: 0;
+  font-size: 16px;
+  line-height: normal;
+}
+
+.daluma-insight__quote {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: clamp(28px, 3.5vw, 40px);
+  font-weight: 500;
+  line-height: normal;
+}
+
+.daluma-impact__highlight {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* Image aspect ratios from Figma */
+.daluma-image-wrap--hotjar {
+  height: 280px;
+}
+
+.daluma-image-wrap--hotjar img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.daluma-image-wrap--heatmap {
+  aspect-ratio: 600 / 437;
+}
+
+.daluma-image-wrap--heatmap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.daluma-image-wrap--analysis {
+  aspect-ratio: 1113 / 628;
+}
+
+.daluma-image-wrap--analysis img {
+  width: 102.92%;
+  height: 106%;
+  max-width: none;
+  margin-left: -1.49%;
+  margin-top: -2.36%;
+  object-fit: cover;
+}
+
+.daluma-image-wrap--wireframes,
+.daluma-image-wrap--mockups {
+  aspect-ratio: 2790 / 1440;
+}
+
+.daluma-image-wrap--wireframes img,
+.daluma-image-wrap--mockups img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.daluma-image-wrap--testing {
+  aspect-ratio: 600 / 545;
+}
+
+.daluma-image-wrap--testing img {
+  width: 100%;
+  height: 114.27%;
+  max-width: none;
+  margin-top: -14.35%;
+  object-fit: cover;
+}
+
+.daluma-image-wrap--homepage {
+  aspect-ratio: 600 / 336;
+}
+
+.daluma-image-wrap--homepage img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
