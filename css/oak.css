@@ -58,7 +58,7 @@
   gap: var(--oak-section-gap);
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: var(--section-padding) 200px;
+  padding: var(--oak-section-gap) 200px var(--section-padding);
   box-sizing: border-box;
 }
 

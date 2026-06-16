@@ -16,14 +16,26 @@
         <!-- Hero -->
         <section class="section-dark hero container" data-node-id="2280:677">
             <header class="nav" data-node-id="2280:678">
+                <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+                    <i class="ph-light ph-list" aria-hidden="true"></i>
+                </button>
                 <a href="#" class="script-logo">Youlia Tzaneva</a>
-                <nav class="nav-links" aria-label="Main navigation">
+                <nav class="nav-links nav-links--desktop" aria-label="Main navigation">
                     <a href="#work">Work</a>
                     <a href="#about">About</a>
                     <a href="assets/resume/youlia-tzaneva-ux-cv.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
                 </nav>
-                <a href="#contact" class="btn btn-tan btn-tan--nav">Contact</a>
+                <a href="#contact" class="btn btn-tan btn-tan--nav nav-contact--desktop">Contact</a>
+                <a href="#contact" class="nav-contact--mobile" aria-label="Contact">
+                    <i class="ph-light ph-envelope-simple" aria-hidden="true"></i>
+                </a>
             </header>
+            <nav class="nav-menu" id="nav-menu" aria-label="Mobile navigation" hidden>
+                <a href="#work">Work</a>
+                <a href="#about">About</a>
+                <a href="assets/resume/youlia-tzaneva-ux-cv.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+                <a href="#contact">Contact</a>
+            </nav>
 
             <div class="hero-body" data-node-id="2280:686">
                 <div class="hero-intro-block" data-node-id="2280:687">
@@ -86,25 +98,27 @@
                 <!-- Barnebys -->
                 <article class="project" data-node-id="2280:720">
                     <div class="project__row">
-                        <div class="project__col project__col--barnebys" data-node-id="2303:181">
-                            <div class="project__content" data-node-id="2280:721">
-                                <div class="project__tags" data-node-id="2280:722">
-                                    <span class="tag">Auction marketplace</span>
-                                    <span class="tag">Design system</span>
-                                    <span class="tag">Redesign</span>
-                                </div>
-                                <div data-node-id="2280:729">
-                                    <p class="project__desc">Leading the entire redesign of an auction marketplace with a focus on modern, timeless design.</p>
-                                    <a href="barnebys.html" class="script-link">See case study&gt;</a>
-                                </div>
-                            </div>
-                            <h3 class="heading-display heading-display--project project__title" data-node-id="2280:734">Barnebys</h3>
-                        </div>
-                        <div class="project__divider-v"></div>
                         <div class="project__images" data-node-id="2280:735">
                             <img src="assets/images/homepage1.png" alt="Barnebys homepage" class="project-img project-img--main">
                             <img src="assets/images/screenshot-20210906.png" alt="Barnebys screen" class="project-img project-img--side">
                             <img src="assets/images/screenshot-20210907.png" alt="Barnebys mobile" class="project-img project-img--small">
+                        </div>
+                        <div class="project__col project__col--barnebys" data-node-id="2303:181">
+                            <h3 class="heading-display heading-display--project project__title" data-node-id="2280:734">Barnebys</h3>
+                            <div class="project__details">
+                                <div class="project__divider-v" aria-hidden="true"></div>
+                                <div class="project__content" data-node-id="2280:721">
+                                    <div class="project__tags" data-node-id="2280:722">
+                                        <span class="tag">Auctions</span>
+                                        <span class="tag">Design system</span>
+                                        <span class="tag">Redesign</span>
+                                    </div>
+                                    <div data-node-id="2280:729">
+                                        <p class="project__desc">Leading the entire redesign of an auction marketplace with a focus on modern, timeless design.</p>
+                                        <a href="barnebys.html" class="script-link">See case study&gt;</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="project__divider"></div>
@@ -118,20 +132,22 @@
                             <img src="assets/images/screenshot-20210906.png" alt="DALUMA screen" class="project-img project-img--side">
                             <img src="assets/images/screenshot-20210907.png" alt="DALUMA mobile" class="project-img project-img--small">
                         </div>
-                        <div class="project__divider-v"></div>
                         <div class="project__col project__col--daluma" data-node-id="2303:182">
-                            <div class="project__content" data-node-id="2280:740">
-                                <div class="project__tags" data-node-id="2280:741">
-                                    <span class="tag">E-commerce</span>
-                                    <span class="tag">Conversion</span>
-                                    <span class="tag">Heatmaps</span>
-                                </div>
-                                <div data-node-id="2280:748">
-                                    <p class="project__desc">Redesigning a holistic health e-commerce platform to improve brand understanding and conversion rates.</p>
-                                    <a href="daluma.html" class="script-link">See case study&gt;</a>
+                            <h3 class="heading-display heading-display--project project__title" data-node-id="2280:753">DALUMA</h3>
+                            <div class="project__details">
+                                <div class="project__divider-v" aria-hidden="true"></div>
+                                <div class="project__content" data-node-id="2280:740">
+                                    <div class="project__tags" data-node-id="2280:741">
+                                        <span class="tag">E-commerce</span>
+                                        <span class="tag">Conversion</span>
+                                        <span class="tag">Heatmaps</span>
+                                    </div>
+                                    <div data-node-id="2280:748">
+                                        <p class="project__desc">Redesigning a holistic health e-commerce platform to improve brand understanding and conversion rates.</p>
+                                        <a href="daluma.html" class="script-link">See case study&gt;</a>
+                                    </div>
                                 </div>
                             </div>
-                            <h3 class="heading-display heading-display--project project__title" data-node-id="2280:753">DALUMA</h3>
                         </div>
                     </div>
                     <div class="project__divider"></div>
@@ -140,25 +156,27 @@
                 <!-- Oak National Academy -->
                 <article class="project project--oak" data-node-id="2280:758">
                     <div class="project__row">
-                        <div class="project__col project__col--oak" data-node-id="2303:183">
-                            <div class="project__content" data-node-id="2280:759">
-                                <div class="project__tags" data-node-id="2280:760">
-                                    <span class="tag">Online education</span>
-                                    <span class="tag">User personas</span>
-                                    <span class="tag">User testing</span>
-                                </div>
-                                <div data-node-id="2280:767">
-                                    <p class="project__desc">Making learning more accessible in a remote digital environment, saving teachers time spent on lesson planning, and assisting a broad spectrum of users.</p>
-                                    <a href="oak.html" class="script-link">See case study&gt;</a>
-                                </div>
-                            </div>
-                            <h3 class="heading-display heading-display--project project__title project__title--oak" data-node-id="2280:772">Oak National Academy</h3>
-                        </div>
-                        <div class="project__divider-v"></div>
                         <div class="project__images" data-node-id="2280:773">
                             <img src="assets/images/test-results.png" alt="Oak National Academy test results" class="project-img project-img--oak-1">
                             <img src="assets/images/screenshot-oak-1.png" alt="Oak National Academy screen" class="project-img project-img--oak-3">
                             <img src="assets/images/screenshot-oak-2.png" alt="Oak National Academy dashboard" class="project-img project-img--oak-2">
+                        </div>
+                        <div class="project__col project__col--oak" data-node-id="2303:183">
+                            <h3 class="heading-display heading-display--project project__title project__title--oak" data-node-id="2280:772">Oak National Academy</h3>
+                            <div class="project__details">
+                                <div class="project__divider-v" aria-hidden="true"></div>
+                                <div class="project__content" data-node-id="2280:759">
+                                    <div class="project__tags" data-node-id="2280:760">
+                                        <span class="tag">Online education</span>
+                                        <span class="tag">User personas</span>
+                                        <span class="tag">User testing</span>
+                                    </div>
+                                    <div data-node-id="2280:767">
+                                        <p class="project__desc">Making learning more accessible in a remote digital environment, saving teachers time spent on lesson planning, and assisting a broad spectrum of users.</p>
+                                        <a href="oak.html" class="script-link">See case study&gt;</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="project__divider"></div>
@@ -284,6 +302,7 @@ Travel has taught me to stay open; design has taught me to stay intentional. To 
             </form>
         </section>
     </div>
+    <script src="js/mobile-nav.js"></script>
     <script src="js/contact-form.js"></script>
 </body>
 </html>

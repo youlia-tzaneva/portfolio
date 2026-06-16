@@ -32,6 +32,10 @@
   margin-bottom: 0;
 }
 
+.page--barnebys .oak-section--tight-bottom + .oak-image-section {
+  padding-top: var(--section-padding);
+}
+
 /* Discovery insight callout */
 .barnebys-insight {
   display: flex;
