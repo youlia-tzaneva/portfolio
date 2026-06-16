@@ -1,0 +1,130 @@
+/* Case Study - Barnebys (2329:706) — overrides on shared oak case study layout */
+
+.page--barnebys {
+  --oak-intro-width: 664px;
+}
+
+.page--barnebys .oak-challenge-col p {
+  margin: 0;
+  font-size: 16px;
+  line-height: normal;
+}
+
+.oak-section--challenge {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.oak-section--challenge .oak-section__header {
+  margin-bottom: 0;
+}
+
+.oak-section__body--after-cols {
+  margin: 0;
+}
+
+.oak-section--tight-bottom {
+  padding-bottom: 0;
+}
+
+.oak-section--tight-bottom .oak-section__header {
+  margin-bottom: 0;
+}
+
+/* Discovery insight callout */
+.barnebys-insight {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.barnebys-insight__lead,
+.barnebys-insight__follow {
+  margin: 0;
+  font-size: 16px;
+  line-height: normal;
+}
+
+.barnebys-insight__quote {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: clamp(28px, 3.5vw, 40px);
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* Impact — metrics pending */
+.barnebys-impact__note {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: clamp(28px, 3.5vw, 40px);
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+/* Image aspect ratios from Figma */
+.barnebys-image-wrap--presentation {
+  height: 336px;
+}
+
+.barnebys-image-wrap--presentation img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.barnebys-image-wrap--design-system-1 {
+  aspect-ratio: 600 / 437;
+}
+
+.barnebys-image-wrap--design-system-1 img,
+.barnebys-image-wrap--design-system-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.barnebys-image-wrap--design-system-2 {
+  aspect-ratio: 600 / 688;
+}
+
+.oak-image-section--design-system {
+  padding-bottom: 40px;
+}
+
+.barnebys-image-wrap--workshop {
+  aspect-ratio: 600 / 362;
+}
+
+.barnebys-image-wrap--workshop img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.barnebys-image-wrap--ai-workflow {
+  aspect-ratio: 600 / 331;
+}
+
+.barnebys-image-wrap--ai-workflow img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.barnebys-image-wrap--homepage {
+  aspect-ratio: 600 / 350;
+}
+
+.barnebys-image-wrap--homepage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
