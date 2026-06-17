@@ -14,15 +14,27 @@
 <body>
     <div class="page page--oak" data-node-id="2276:447" data-name="Case Study - Oak">
 
-        <header class="oak-nav" data-node-id="2276:598">
-            <a href="index.html" class="script-logo">Youlia Tzaneva</a>
-            <nav class="nav-links" aria-label="Main navigation">
+        <header class="oak-nav" data-node-id="2332:1325">
+            <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+                <i class="ph-light ph-list" aria-hidden="true"></i>
+            </button>
+            <a href="index.html" class="script-logo" data-node-id="2332:1328">Youlia Tzaneva</a>
+            <nav class="nav-links nav-links--desktop" aria-label="Main navigation">
                 <a href="index.html#work">Work</a>
                 <a href="index.html#about">About</a>
                 <a href="assets/resume/youlia-tzaneva-ux-cv.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
             </nav>
-            <a href="#contact" class="btn btn-tan btn-tan--nav">Contact</a>
+            <a href="#contact" class="btn btn-tan btn-tan--nav nav-contact--desktop">Contact</a>
+            <a href="#contact" class="nav-contact--mobile" aria-label="Contact" data-node-id="2332:1329">
+                <i class="ph-light ph-envelope-simple" aria-hidden="true"></i>
+            </a>
         </header>
+        <nav class="nav-menu" id="nav-menu" aria-label="Mobile navigation" hidden>
+            <a href="index.html#work">Work</a>
+            <a href="index.html#about">About</a>
+            <a href="assets/resume/youlia-tzaneva-ux-cv.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
         <section class="oak-hero" data-node-id="2276:458">
             <h1 class="oak-hero__title" data-node-id="2276:459">Creating accessible online education</h1>
@@ -34,9 +46,10 @@
                         <div data-node-id="2276:464">
                             <p>Oak National Academy is a digital education platform created to support teachers and students with accessible, high-quality learning resources, initially accelerated by the shift to remote learning during the pandemic.</p>
                             <p aria-hidden="true">&nbsp;</p>
-                            <p>Working across design and content teams, I contributed to improving both:</p>
+                            <p>Working across design and content teams, I contributed to improving:</p>
                             <ul>
                                 <li>The student-facing learning experience</li>
+                                <li>The teacher-facing lesson planning flow</li>
                                 <li>Internal tools used by curriculum teams to create and manage educational content</li>
                             </ul>
                         </div>
@@ -233,7 +246,8 @@
                 <p class="oak-testimonial__quote" data-node-id="2276:562">"Youlia's been fantastic for us at Oak National Academy, supporting multiple development squads across the design lifecycle, working directly with Product Managers and developers on discovery, UX flows and detailed UI design. A valuable addition to any team!"</p>
                 <footer class="oak-testimonial__author" data-node-id="2276:563">
                     <p class="script-accent script-accent--md" data-node-id="2276:564">Will Gayne</p>
-                    <p class="oak-testimonial__role" data-node-id="2276:565">Director of Product Strategy &amp; IMPACT - Oak National Academy</p>
+                    <p class="oak-testimonial__role oak-testimonial__role--full" data-node-id="2276:565">Director of Product Strategy &amp; IMPACT - Oak National Academy</p>
+                    <p class="oak-testimonial__role oak-testimonial__role--at">Director of Product Strategy &amp; IMPACT at Oak National Academy</p>
                 </footer>
             </blockquote>
         </section>
@@ -292,6 +306,7 @@
             </form>
         </section>
     </div>
+    <script src="js/mobile-nav.js"></script>
     <script src="js/contact-form.js"></script>
 </body>
 </html>

@@ -16,14 +16,26 @@
     <div class="page page--oak page--daluma" data-node-id="2318:307" data-name="Case Study - DALUMA">
 
         <header class="oak-nav" data-node-id="2318:308">
+            <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+                <i class="ph-light ph-list" aria-hidden="true"></i>
+            </button>
             <a href="index.html" class="script-logo">Youlia Tzaneva</a>
-            <nav class="nav-links" aria-label="Main navigation">
+            <nav class="nav-links nav-links--desktop" aria-label="Main navigation">
                 <a href="index.html#work">Work</a>
                 <a href="index.html#about">About</a>
                 <a href="assets/resume/youlia-tzaneva-ux-cv.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
             </nav>
-            <a href="#contact" class="btn btn-tan btn-tan--nav">Contact</a>
+            <a href="#contact" class="btn btn-tan btn-tan--nav nav-contact--desktop">Contact</a>
+            <a href="#contact" class="nav-contact--mobile" aria-label="Contact" data-node-id="2332:1161">
+                <i class="ph-light ph-envelope-simple" aria-hidden="true"></i>
+            </a>
         </header>
+        <nav class="nav-menu" id="nav-menu" aria-label="Mobile navigation" hidden>
+            <a href="index.html#work">Work</a>
+            <a href="index.html#about">About</a>
+            <a href="assets/resume/youlia-tzaneva-ux-cv.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
         <section class="oak-hero" data-node-id="2318:312">
             <h1 class="oak-hero__title" data-node-id="2318:313">Turning browsers into buyers</h1>
@@ -235,7 +247,10 @@
                 <p class="oak-testimonial__quote" data-node-id="2318:410">"Youlia consistently executes her work before deadlines while keeping our long-term goals in mind, truly embodying our mission to identify the problem before tackling the solution. She stands out for remarkable work ethics through kindness, diligence, and ambition. She has created significant value and shown outstanding efficiency in delivering results."</p>
                 <footer class="oak-testimonial__author" data-node-id="2318:411">
                     <p class="script-accent script-accent--md" data-node-id="2318:412">David J. Kugler</p>
-                    <p class="oak-testimonial__role" data-node-id="2318:413">Founder &amp; CEO</p>
+                    <p class="oak-testimonial__role" data-node-id="2318:413">
+                        <span class="oak-testimonial__role--full">Founder &amp; CEO</span>
+                        <span class="oak-testimonial__role--at">Founder &amp; CEO at DALUMA</span>
+                    </p>
                 </footer>
             </blockquote>
         </section>
@@ -250,7 +265,8 @@
                         <span data-node-id="2318:422">Barnebys</span>
                     </a>
                     <a href="oak.html" class="oak-other-works__link oak-other-works__link--next" data-node-id="2318:423">
-                        <span data-node-id="2318:424">Oak National Academy</span>
+                        <span class="oak-other-works__label oak-other-works__label--full" data-node-id="2318:424">Oak National Academy</span>
+                        <span class="oak-other-works__label oak-other-works__label--short">Oak</span>
                         <i class="ph-light ph-caret-right oak-other-works__icon" aria-hidden="true"></i>
                     </a>
                 </nav>
@@ -294,6 +310,7 @@
             </form>
         </section>
     </div>
+    <script src="js/mobile-nav.js"></script>
     <script src="js/contact-form.js"></script>
 </body>
 </html>
