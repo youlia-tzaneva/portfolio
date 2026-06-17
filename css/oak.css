@@ -551,12 +551,13 @@
     --oak-image-px: 24px;
   }
 
-  .oak-nav {
-    flex-direction: column;
-    align-items: flex-start;
+  .page--oak .oak-nav {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
   }
 
-  .oak-nav .nav-links {
+  .page--oak .oak-nav .nav-links:not(.nav-links--desktop) {
     gap: 24px;
     flex-wrap: wrap;
   }

@@ -15,15 +15,27 @@
 <body>
     <div class="page page--oak page--barnebys" data-node-id="2329:706" data-name="Case Study - Barnebys">
 
-        <header class="oak-nav" data-node-id="2329:707">
-            <a href="index.html" class="script-logo">Youlia Tzaneva</a>
-            <nav class="nav-links" aria-label="Main navigation">
+        <header class="oak-nav" data-node-id="2329:923">
+            <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+                <i class="ph-light ph-list" aria-hidden="true"></i>
+            </button>
+            <a href="index.html" class="script-logo" data-node-id="2329:1101">Youlia Tzaneva</a>
+            <nav class="nav-links nav-links--desktop" aria-label="Main navigation">
                 <a href="index.html#work">Work</a>
                 <a href="index.html#about">About</a>
                 <a href="assets/resume/youlia-tzaneva-ux-cv.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
             </nav>
-            <a href="#contact" class="btn btn-tan btn-tan--nav">Contact</a>
+            <a href="#contact" class="btn btn-tan btn-tan--nav nav-contact--desktop">Contact</a>
+            <a href="#contact" class="nav-contact--mobile" aria-label="Contact" data-node-id="2329:1102">
+                <i class="ph-light ph-envelope-simple" aria-hidden="true"></i>
+            </a>
         </header>
+        <nav class="nav-menu" id="nav-menu" aria-label="Mobile navigation" hidden>
+            <a href="index.html#work">Work</a>
+            <a href="index.html#about">About</a>
+            <a href="assets/resume/youlia-tzaneva-ux-cv.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
         <section class="oak-hero" data-node-id="2329:711">
             <h1 class="oak-hero__title" data-node-id="2329:712">Modernizing a marketplace at scale</h1>
@@ -60,9 +72,9 @@
                     <span class="tag">Design system</span>
                     <span class="tag">User interviews</span>
                     <span class="tag">AI-assisted workflows</span>
+                    <span class="tag">Mobile-first</span>
                     <span class="tag">Stakeholder alignment</span>
                     <span class="tag">UX strategy</span>
-                    <span class="tag">Mobile-first</span>
                 </div>
             </div>
         </section>
@@ -237,7 +249,8 @@
                         <span data-node-id="2329:834">DALUMA</span>
                     </a>
                     <a href="oak.html" class="oak-other-works__link oak-other-works__link--next" data-node-id="2329:835">
-                        <span data-node-id="2329:836">Oak National Academy</span>
+                        <span class="oak-other-works__label oak-other-works__label--full" data-node-id="2329:836">Oak National Academy</span>
+                        <span class="oak-other-works__label oak-other-works__label--short">Oak</span>
                         <i class="ph-light ph-caret-right oak-other-works__icon" aria-hidden="true"></i>
                     </a>
                 </nav>
@@ -281,6 +294,7 @@
             </form>
         </section>
     </div>
+    <script src="js/mobile-nav.js"></script>
     <script src="js/contact-form.js"></script>
 </body>
 </html>

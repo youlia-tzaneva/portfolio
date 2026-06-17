@@ -132,3 +132,289 @@
   height: 100%;
   object-fit: cover;
 }
+
+.oak-other-works__label--short {
+  display: none;
+}
+
+/* Mobile — Mobile / Case Study - Barnebys (2329:922) */
+@media (max-width: 768px) {
+  .page--barnebys {
+    --oak-content-px: 16px;
+    --oak-image-px: 16px;
+  }
+
+  .page--barnebys .oak-nav {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    max-width: none;
+    margin: 0;
+    padding: 32px 16px;
+    gap: 0;
+  }
+
+  .page--barnebys .oak-nav .script-logo {
+    flex: 1;
+    text-align: center;
+    font-size: 72px;
+    line-height: 0.4;
+  }
+
+  .page--barnebys .nav-toggle,
+  .page--barnebys .nav-contact--mobile {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-black);
+    flex-shrink: 0;
+  }
+
+  .page--barnebys .nav-toggle {
+    font-size: 23px;
+  }
+
+  .page--barnebys .nav-contact--mobile {
+    font-size: 25px;
+  }
+
+  .page--barnebys .nav-links--desktop,
+  .page--barnebys .nav-contact--desktop {
+    display: none;
+  }
+
+  .page--barnebys .nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px 16px 32px;
+    background: var(--color-dark);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .page--barnebys .nav-menu[hidden] {
+    display: none;
+  }
+
+  .page--barnebys .nav-menu a {
+    font-size: 18px;
+    color: var(--color-white);
+  }
+
+  .page--barnebys .oak-hero {
+    gap: 40px;
+    max-width: none;
+    margin: 0;
+    padding: 0 16px;
+  }
+
+  .page--barnebys .oak-hero__title {
+    font-size: 40px;
+    letter-spacing: 2px;
+  }
+
+  .page--barnebys .oak-hero__overview {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 40px;
+  }
+
+  .page--barnebys .oak-hero__sidebar {
+    flex-direction: row;
+    gap: 40px;
+    width: 100%;
+  }
+
+  .page--barnebys .oak-meta-block:first-child {
+    flex: 0 0 128px;
+    width: 128px;
+  }
+
+  .page--barnebys .oak-meta-block:last-child {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .page--barnebys .oak-section {
+    max-width: none;
+    margin: 0;
+    padding: 80px 16px 0;
+  }
+
+  .page--barnebys .oak-section--challenge {
+    gap: 32px;
+    padding-top: 80px;
+  }
+
+  .page--barnebys .oak-section--challenge .oak-section__header {
+    gap: 24px;
+  }
+
+  .page--barnebys .heading-display--lg {
+    font-size: 32px;
+  }
+
+  .page--barnebys .oak-challenge-cols {
+    counter-reset: barnebys-challenge;
+    gap: 32px;
+  }
+
+  .page--barnebys .oak-challenge-col h3 {
+    counter-increment: barnebys-challenge;
+    padding-left: 90px;
+    text-indent: -90px;
+  }
+
+  .page--barnebys .oak-challenge-col h3::before {
+    content: counter(barnebys-challenge) ". ";
+  }
+
+  .page--barnebys .oak-section--gap-40 {
+    gap: 40px;
+    padding-top: 80px;
+  }
+
+  .page--barnebys .oak-section--gap-40 .oak-section__header {
+    gap: 24px;
+  }
+
+  .page--barnebys .oak-section--tight-bottom {
+    padding-top: 80px;
+  }
+
+  .page--barnebys .oak-section--tight-bottom + .oak-image-section {
+    padding-top: 40px;
+  }
+
+  .page--barnebys .oak-image-section {
+    max-width: none;
+    margin: 0;
+    padding: 0 16px;
+  }
+
+  .page--barnebys .oak-section + .oak-image-section,
+  .page--barnebys .oak-impact + .oak-image-section {
+    padding-top: 40px;
+  }
+
+  .page--barnebys .oak-image-section + .oak-image-section {
+    padding-top: 24px;
+  }
+
+  .page--barnebys .oak-image-section--design-system {
+    padding-bottom: 0;
+  }
+
+  .page--barnebys .barnebys-insight {
+    gap: 24px;
+    padding: 24px 16px 0;
+    text-align: left;
+  }
+
+  .page--barnebys .barnebys-insight__quote {
+    font-size: 32px;
+    font-weight: 500;
+    text-align: left;
+  }
+
+  .page--barnebys .barnebys-image-wrap--presentation {
+    height: 203px;
+  }
+
+  .page--barnebys .oak-impact {
+    gap: 40px;
+    padding-top: 80px;
+  }
+
+  .page--barnebys .oak-impact__lead {
+    text-align: left;
+  }
+
+  .page--barnebys .barnebys-impact__note {
+    font-size: 40px;
+    font-weight: 400;
+    text-align: left;
+  }
+
+  .page--barnebys .oak-reflection {
+    gap: 80px;
+    padding: 80px 16px 0;
+    max-width: none;
+    margin: 0;
+  }
+
+  .page--barnebys .oak-reflection .oak-section__header {
+    gap: 24px;
+    margin-bottom: 0;
+  }
+
+  .page--barnebys .oak-testimonial {
+    max-width: none;
+    margin: 0;
+    padding: 80px 16px 0;
+  }
+
+  .page--barnebys .oak-other-works {
+    max-width: none;
+    margin: 0;
+    padding: 80px 16px 0;
+    gap: 80px;
+  }
+
+  .page--barnebys .oak-other-works__inner {
+    gap: 24px;
+  }
+
+  .page--barnebys .oak-other-works__nav {
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .page--barnebys .oak-other-works__link--next {
+    justify-content: flex-end;
+    text-align: right;
+  }
+
+  .page--barnebys .oak-other-works__label--full {
+    display: none;
+  }
+
+  .page--barnebys .oak-other-works__label--short {
+    display: inline;
+  }
+
+  .page--barnebys .section-dark.contact {
+    padding: 60px 16px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .page--barnebys .contact__heading {
+    font-size: 40px;
+  }
+
+  .page--barnebys .contact__email {
+    font-size: 24px;
+  }
+
+  .page--barnebys .contact__left {
+    max-width: none;
+    gap: 40px;
+  }
+
+  .page--barnebys .contact__social {
+    align-self: center;
+  }
+
+  .page--barnebys .form-input {
+    font-size: 16px;
+    padding: 8px 32px;
+  }
+
+  .page--barnebys .form-input--message {
+    padding: 16px 32px;
+  }
+}
