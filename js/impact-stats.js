@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
   const DURATION = 1200;
+  const animatedGroups = new WeakSet();
 
   function parseStatText(text) {
     const trimmed = text.trim();
@@ -30,7 +31,21 @@ document.addEventListener("DOMContentLoaded", () => {
     return `${prefix}${numberText}${suffix}`;
   }
 
+  function isVisibleEnough(el) {
+    const rect = el.getBoundingClientRect();
+    const viewportHeight =
+      window.innerHeight || document.documentElement.clientHeight;
+    const visibleTop = Math.max(rect.top, 0);
+    const visibleBottom = Math.min(rect.bottom, viewportHeight);
+    const visibleHeight = Math.max(0, visibleBottom - visibleTop);
+
+    return visibleHeight >= Math.min(rect.height * 0.25, 32);
+  }
+
   function animateGroup(group) {
+    if (animatedGroups.has(group)) return;
+    animatedGroups.add(group);
+
     const stats = [...group.querySelectorAll(".oak-stat__number")]
       .map((el) => {
         const parsed = parseStatText(el.textContent);
@@ -65,16 +80,27 @@ document.addEventListener("DOMContentLoaded", () => {
     requestAnimationFrame(tick);
   }
 
+  function tryAnimate(group) {
+    if (animatedGroups.has(group)) return;
+    if (!isVisibleEnough(group)) return;
+
+    animateGroup(group);
+    observer.unobserve(group);
+  }
+
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        animateGroup(entry.target);
-        observer.unobserve(entry.target);
+        if (!entry.isIntersecting || entry.intersectionRatio < 0.15) return;
+        tryAnimate(entry.target);
       });
     },
-    { threshold: 0.35 }
+    { threshold: [0, 0.15, 0.35], rootMargin: "0px 0px -5% 0px" }
   );
 
   statGroups.forEach((group) => observer.observe(group));
+
+  requestAnimationFrame(() => {
+    statGroups.forEach((group) => tryAnimate(group));
+  });
 });

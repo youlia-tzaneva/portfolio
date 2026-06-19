@@ -356,7 +356,7 @@
 .oak-impact__stats {
   display: flex;
   gap: 16px;
-  align-items: flex-end;
+  align-items: flex-start;
   width: 417px;
   max-width: 100%;
 }
