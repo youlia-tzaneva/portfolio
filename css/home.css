@@ -318,9 +318,19 @@ a {
   position: relative;
 }
 
+.hero-headline-wrap {
+  align-self: stretch;
+  width: 100%;
+}
+
 .hero-headline {
   align-self: stretch;
   width: 100%;
+}
+
+.hero-headline__part--mobile,
+.hero-headline__br--mobile {
+  display: none;
 }
 
 .hero-intro__text {
@@ -999,13 +1009,41 @@ a {
     width: 100%;
   }
 
+  .hero-headline__part--desktop,
+  .hero-headline__br--desktop {
+    display: none;
+  }
+
+  .hero-headline__part--mobile {
+    display: inline;
+  }
+
+  .hero-headline__br--mobile {
+    display: block;
+  }
+
+  .hero-headline-wrap {
+    position: relative;
+    width: 100%;
+  }
+
+  .hero-headline {
+    width: min-content;
+    max-width: 100%;
+    align-self: flex-end;
+  }
+
   .hero-flower {
     display: block;
-    left: 60%;
-    top: -8%;
-    width: 42%;
+    top: -7%;
+    right: -6%;
+    left: auto;
+    bottom: auto;
+    width: 46%;
     max-width: 160px;
-    transform: rotate(51deg);
+    height: auto;
+    object-fit: contain;
+    transform: rotate(51.13deg);
   }
 
   .hero-cards {
