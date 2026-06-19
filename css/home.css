@@ -318,9 +318,13 @@ a {
   position: relative;
 }
 
+.hero-headline,
+.hero-headline__line {
+  letter-spacing: 0;
+}
+
 .hero-headline {
   width: 100%;
-  letter-spacing: 0;
   line-height: 0;
   text-align: left;
 }
@@ -1053,8 +1057,14 @@ a {
     align-items: flex-start;
   }
 
-  .hero-headline {
+  .hero-headline,
+  .hero-headline.heading-display--xl,
+  .hero-headline__line,
+  .hero-headline__line--mobile {
     letter-spacing: 0;
+  }
+
+  .hero-headline {
     padding-right: 40%;
   }
 
