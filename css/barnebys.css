@@ -133,6 +133,16 @@
   object-fit: cover;
 }
 
+/* Testimonial — hidden for now */
+.page--barnebys .oak-testimonial,
+.page--barnebys .oak-reflection__divider {
+  display: none;
+}
+
+.page--barnebys .oak-reflection + .oak-other-works {
+  padding-top: var(--section-padding);
+}
+
 .oak-other-works__label--short {
   display: none;
 }
@@ -364,6 +374,10 @@
     margin: 0;
     padding: 80px 16px;
     gap: 80px;
+  }
+
+  .page--barnebys .oak-reflection + .oak-other-works {
+    padding-top: 80px;
   }
 
   .page--barnebys .oak-other-works__inner {
