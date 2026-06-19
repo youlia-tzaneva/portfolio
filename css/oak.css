@@ -551,6 +551,15 @@
 
 /* Mobile — Mobile / Case Study - Oak (2332:1323) */
 @media (max-width: 768px) {
+  .page--oak .oak-nav .script-logo {
+    line-height: 1;
+  }
+
+  .page--oak .oak-hero {
+    margin-top: 40px;
+    padding-top: 0;
+  }
+
   .page--oak:not(.page--barnebys):not(.page--daluma) {
     --oak-content-px: 16px;
     --oak-image-px: 16px;
@@ -570,7 +579,6 @@
     flex: 1;
     text-align: center;
     font-size: 72px;
-    line-height: 0.4;
   }
 
   .page--oak:not(.page--barnebys):not(.page--daluma) .nav-toggle,
@@ -621,8 +629,9 @@
   .page--oak:not(.page--barnebys):not(.page--daluma) .oak-hero {
     gap: 40px;
     max-width: none;
-    margin: 0;
-    padding: 40px 16px 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 16px;
   }
 
   .page--oak:not(.page--barnebys):not(.page--daluma) .oak-hero__title {
