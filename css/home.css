@@ -3,7 +3,7 @@
   src: url("../fonts/CasualScript.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -11,7 +11,7 @@
   src: url("../fonts/DomaineDispNar-Regular.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -19,7 +19,11 @@
   src: url("../fonts/DomaineDispNar-Bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
+}
+
+html.fonts-loading body {
+  visibility: hidden;
 }
 
 /* Design tokens from Figma Home New frame (2338:110) */
