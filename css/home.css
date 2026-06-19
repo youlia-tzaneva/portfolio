@@ -185,9 +185,16 @@ a {
 .script-link {
   position: relative;
   display: inline-block;
+  width: fit-content;
+  max-width: 100%;
+  align-self: flex-start;
   font-family: var(--font-script);
   font-size: clamp(36px, 5vw, 60px);
   line-height: 1;
+}
+
+.project__col--daluma .script-link {
+  align-self: flex-end;
 }
 
 .script-link::after {
@@ -641,29 +648,32 @@ a {
 
 .project-img--barnebys-1 {
   width: 342px;
-  height: 305px;
+  aspect-ratio: 1440 / 840;
+  height: auto;
   top: 0;
   left: 199px;
   transform: rotate(4deg);
-  object-position: center top;
+  object-fit: contain;
 }
 
 .project-img--barnebys-2 {
   width: 230px;
-  height: 248px;
+  aspect-ratio: 3024 / 1672;
+  height: auto;
   top: 134px;
   left: 0;
   transform: rotate(-12deg);
-  object-position: left top;
+  object-fit: contain;
 }
 
 .project-img--barnebys-3 {
   width: 136px;
-  height: 127px;
+  aspect-ratio: 2236 / 1352;
+  height: auto;
   top: 296px;
   left: 233px;
   transform: rotate(-4deg);
-  object-position: center 35%;
+  object-fit: contain;
 }
 
 .project--oak .project__images {
@@ -673,26 +683,32 @@ a {
 
 .project-img--oak-1 {
   width: 270px;
-  height: 236px;
+  aspect-ratio: 2300 / 1216;
+  height: auto;
   top: 118px;
   left: 0;
   transform: rotate(2deg);
+  object-fit: contain;
 }
 
 .project-img--oak-2 {
   width: 346px;
-  height: 183px;
+  aspect-ratio: 1732 / 1126;
+  height: auto;
   top: 0;
   left: 78px;
   transform: rotate(1deg);
+  object-fit: contain;
 }
 
 .project-img--oak-3 {
   width: 283px;
-  height: 184px;
+  aspect-ratio: 2582 / 1050;
+  height: auto;
   top: 173px;
   left: 179px;
   transform: rotate(-2deg);
+  object-fit: contain;
 }
 
 /* Testimonials — Frame 24 (2280:777) */
@@ -1243,53 +1259,62 @@ a {
 
   .project-img--barnebys-1 {
     width: 78%;
-    aspect-ratio: 278 / 174;
+    aspect-ratio: 1440 / 840;
+    height: auto;
     top: 0;
     left: 22%;
     transform: rotate(4deg);
-    object-position: center top;
+    object-fit: contain;
   }
 
   .project-img--barnebys-2 {
     width: 71%;
-    aspect-ratio: 253 / 151;
+    aspect-ratio: 3024 / 1672;
+    height: auto;
     top: 33%;
     left: 0;
     transform: rotate(-2.78deg);
-    object-position: left top;
+    object-fit: contain;
   }
 
   .project-img--barnebys-3 {
     width: 35%;
-    aspect-ratio: 125 / 120;
+    aspect-ratio: 2236 / 1352;
+    height: auto;
     top: 57%;
     left: 50%;
     transform: rotate(12.84deg);
-    object-position: center 35%;
+    object-fit: contain;
   }
 
   .project-img--oak-1 {
     width: 59%;
-    aspect-ratio: 213 / 188;
+    aspect-ratio: 2300 / 1216;
+    height: auto;
     top: 32%;
     left: 0;
     transform: rotate(2deg);
+    object-fit: contain;
   }
 
   .project-img--oak-2 {
     width: 75%;
-    aspect-ratio: 267 / 145;
+    aspect-ratio: 1732 / 1126;
+    height: auto;
     top: 0;
     left: 17%;
     transform: rotate(1deg);
+    object-fit: contain;
   }
 
   .project-img--oak-3 {
     width: 62%;
-    aspect-ratio: 221 / 148;
+    aspect-ratio: 2582 / 1050;
+    height: auto;
     top: 47%;
     left: 38%;
     transform: rotate(-2deg);
+    object-fit: contain;
   }
 
   .testimonials.container {
