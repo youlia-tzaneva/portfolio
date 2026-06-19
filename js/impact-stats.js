@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const animatedGroups = new WeakSet();
 
   function easeOutGentle(t) {
-    // Mostly linear with a soft deceleration near the target
-    return 1 - (1 - t) ** 1.6;
+    // Stronger deceleration near the target for a smoother landing
+    return 1 - (1 - t) ** 3;
   }
 
   function parseStatText(text) {
