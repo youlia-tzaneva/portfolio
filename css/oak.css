@@ -729,6 +729,9 @@
 
   .page--oak:not(.page--barnebys):not(.page--daluma) .oak-impact__stats {
     width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
   }
 
   .page--oak:not(.page--barnebys):not(.page--daluma) .oak-impact__outcomes {
