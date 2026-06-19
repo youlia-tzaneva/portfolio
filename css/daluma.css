@@ -371,7 +371,7 @@
   .page--daluma .oak-testimonial {
     max-width: none;
     margin: 0;
-    padding: 0 16px;
+    padding: 80px 16px 0;
   }
 
   .page--daluma .oak-testimonial__role--full {
