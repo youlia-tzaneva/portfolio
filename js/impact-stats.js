@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
-  const DURATION = 1200;
+  const DURATION = 2400;
   const animatedGroups = new WeakSet();
 
   function easeOutGentle(t) {
