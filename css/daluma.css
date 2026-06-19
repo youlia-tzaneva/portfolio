@@ -385,7 +385,7 @@
   .page--daluma .oak-other-works {
     max-width: none;
     margin: 0;
-    padding: 80px 16px 0;
+    padding: 80px 16px;
     gap: 80px;
   }
 
