@@ -22,7 +22,7 @@
   font-display: swap;
 }
 
-/* Design tokens from Figma Home frame (2280:676) */
+/* Design tokens from Figma Home New frame (2338:110) */
 :root {
   --color-dark: #3d3327;
   --color-cream: #fcfaf7;
@@ -646,6 +646,18 @@ a {
   left: 200px;
 }
 
+.project--right .project-img--main {
+  object-position: center top;
+}
+
+.project--right .project-img--side {
+  object-position: left top;
+}
+
+.project--right .project-img--small {
+  object-position: center top;
+}
+
 .project-img--barnebys-1 {
   width: 342px;
   height: 305px;
@@ -684,7 +696,7 @@ a {
   top: 121px;
   left: 0;
   transform: rotate(2deg);
-  object-position: left center;
+  object-position: left top;
 }
 
 .project-img--oak-2 {
@@ -693,6 +705,7 @@ a {
   top: 0;
   left: 80px;
   transform: rotate(1deg);
+  object-position: center top;
 }
 
 .project-img--oak-3 {
@@ -701,6 +714,7 @@ a {
   top: 177px;
   left: 184px;
   transform: rotate(-2deg);
+  object-position: left top;
 }
 
 /* Testimonials — Frame 24 (2280:777) */
@@ -1282,7 +1296,7 @@ a {
     top: 34.41%;
     left: 0;
     transform: rotate(2deg);
-    object-position: left center;
+    object-position: left top;
   }
 
   .project-img--oak-2 {
@@ -1291,6 +1305,7 @@ a {
     top: 0;
     left: 16.63%;
     transform: rotate(1deg);
+    object-position: center top;
   }
 
   .project-img--oak-3 {
@@ -1299,6 +1314,7 @@ a {
     top: 50.45%;
     left: 38.27%;
     transform: rotate(-2deg);
+    object-position: left top;
   }
 
   .testimonials.container {
