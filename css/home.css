@@ -1079,6 +1079,15 @@ a {
     gap: var(--project-content-gap);
   }
 
+  .project__content > div:not(.project__tags) {
+    align-items: flex-start;
+  }
+
+  .script-link,
+  .project__col--daluma .script-link {
+    align-self: flex-start;
+  }
+
   .project__tags {
     flex-wrap: wrap;
   }
