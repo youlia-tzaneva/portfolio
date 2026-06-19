@@ -7,6 +7,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const DURATION = 1200;
   const animatedGroups = new WeakSet();
 
+  function easeOutGentle(t) {
+    // Mostly linear with a soft deceleration near the target
+    return 1 - (1 - t) ** 1.6;
+  }
+
   function parseStatText(text) {
     const trimmed = text.trim();
     const match = trimmed.match(/^([+\-]?)([\d,]+(?:\.\d+)?)(.*)$/);
@@ -62,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const start = performance.now();
 
     function tick(now) {
-      const progress = Math.min((now - start) / DURATION, 1);
+      const progress = easeOutGentle(Math.min((now - start) / DURATION, 1));
 
       stats.forEach((stat) => {
         stat.el.textContent = formatValue(stat.value * progress, stat);
