@@ -352,6 +352,8 @@ a {
   align-items: center;
   justify-content: center;
   pointer-events: none;
+  z-index: 1;
+  overflow: visible;
 }
 
 .hero-flower-wrap--desktop {
