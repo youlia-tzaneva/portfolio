@@ -584,137 +584,14 @@ a {
 }
 
 .project__images {
-  position: relative;
   flex-shrink: 0;
-  width: 562px;
-  height: 432px;
-}
-
-.project--right .project__images {
-  width: 483px;
-  height: 372px;
+  width: 480px;
 }
 
 .project-img {
-  position: absolute;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
-  object-fit: cover;
-}
-
-.project-img--main {
-  width: 342px;
-  height: 305px;
-  top: 0;
-  left: 199px;
-  transform: rotate(4deg);
-}
-
-.project-img--side {
-  width: 230px;
-  height: 248px;
-  top: 134px;
-  left: 0;
-  transform: rotate(-12deg);
-}
-
-.project-img--small {
-  width: 136px;
-  height: 127px;
-  top: 296px;
-  left: 233px;
-  transform: rotate(-4deg);
-}
-
-.project--right .project-img--main {
-  width: 294px;
-  height: 262px;
-  top: 0;
-  left: 171px;
-}
-
-.project--right .project-img--side {
-  width: 198px;
-  height: 213px;
-  top: 116px;
-  left: 0;
-}
-
-.project--right .project-img--small {
-  width: 117px;
-  height: 109px;
-  top: 255px;
-  left: 200px;
-}
-
-.project--right .project-img--main {
-  object-position: center top;
-}
-
-.project--right .project-img--side {
-  object-position: left top;
-}
-
-.project--right .project-img--small {
-  object-position: center top;
-}
-
-.project-img--barnebys-1 {
-  width: 342px;
-  height: 305px;
-  top: 0;
-  left: 199px;
-  transform: rotate(4deg);
-  object-position: center top;
-}
-
-.project-img--barnebys-2 {
-  width: 230px;
-  height: 248px;
-  top: 134px;
-  left: 0;
-  transform: rotate(-12deg);
-  object-position: left top;
-}
-
-.project-img--barnebys-3 {
-  width: 136px;
-  height: 127px;
-  top: 296px;
-  left: 233px;
-  transform: rotate(-4deg);
-  object-position: center 35%;
-}
-
-.project--oak .project__images {
-  width: 480px;
-  height: 376px;
-}
-
-.project-img--oak-1 {
-  width: 277px;
-  height: 242px;
-  top: 121px;
-  left: 0;
-  transform: rotate(2deg);
-  object-position: left top;
-}
-
-.project-img--oak-2 {
-  width: 355px;
-  height: 188px;
-  top: 0;
-  left: 80px;
-  transform: rotate(1deg);
-  object-position: center top;
-}
-
-.project-img--oak-3 {
-  width: 290px;
-  height: 188px;
-  top: 177px;
-  left: 184px;
-  transform: rotate(-2deg);
-  object-position: left top;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 /* Testimonials — Frame 24 (2280:777) */
@@ -975,7 +852,6 @@ a {
 
   .project__images {
     width: 380px;
-    opacity: 0.9;
   }
 }
 
@@ -1219,102 +1095,15 @@ a {
   .project--right .project__images,
   .project--barnebys .project__images,
   .project--oak .project__images {
-    position: relative;
     width: 100%;
     max-width: 100%;
-    height: 262px;
     margin: 0;
-    overflow: hidden;
     flex-shrink: 0;
   }
 
   .project-img {
-    position: absolute;
-    max-width: 100%;
-    margin: 0;
-    display: block;
-    object-fit: cover;
-  }
-
-  .project-img--main,
-  .project--right .project-img--main {
-    width: 78%;
-    aspect-ratio: 278 / 174;
-    top: 0;
-    left: 22%;
-    transform: rotate(4deg);
-  }
-
-  .project-img--side,
-  .project--right .project-img--side {
-    width: 71%;
-    aspect-ratio: 253 / 151;
-    top: 33%;
-    left: 0;
-    transform: rotate(-2.78deg);
-  }
-
-  .project-img--small,
-  .project--right .project-img--small {
-    width: 35%;
-    aspect-ratio: 125 / 120;
-    top: 57%;
-    left: 50%;
-    transform: rotate(12.84deg);
-  }
-
-  .project-img--barnebys-1 {
-    width: 78%;
-    aspect-ratio: 278 / 174;
-    top: 0;
-    left: 22%;
-    transform: rotate(4deg);
-    object-position: center top;
-  }
-
-  .project-img--barnebys-2 {
-    width: 71%;
-    aspect-ratio: 253 / 151;
-    top: 33%;
-    left: 0;
-    transform: rotate(-2.78deg);
-    object-position: left top;
-  }
-
-  .project-img--barnebys-3 {
-    width: 35%;
-    aspect-ratio: 125 / 120;
-    top: 57%;
-    left: 50%;
-    transform: rotate(12.84deg);
-    object-position: center 35%;
-  }
-
-  .project-img--oak-1 {
-    width: 59.46%;
-    aspect-ratio: 212.864 / 187.658;
-    top: 34.41%;
-    left: 0;
-    transform: rotate(2deg);
-    object-position: left top;
-  }
-
-  .project-img--oak-2 {
-    width: 74.59%;
-    aspect-ratio: 267.048 / 144.517;
-    top: 0;
-    left: 16.63%;
-    transform: rotate(1deg);
-    object-position: center top;
-  }
-
-  .project-img--oak-3 {
-    width: 61.73%;
-    aspect-ratio: 221.004 / 148.038;
-    top: 50.45%;
-    left: 38.27%;
-    transform: rotate(-2deg);
-    object-position: left top;
+    width: 100%;
+    height: auto;
   }
 
   .testimonials.container {
