@@ -320,7 +320,7 @@ a {
 
 .hero-headline {
   width: 100%;
-  letter-spacing: 0.1em;
+  letter-spacing: 0;
   line-height: 0;
   text-align: left;
 }
@@ -1055,7 +1055,7 @@ a {
   }
 
   .hero-headline {
-    letter-spacing: 0.1em;
+    letter-spacing: 0;
     padding-right: 40%;
   }
 
