@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function easeOutGentle(t) {
     // Stronger deceleration near the target for a smoother landing
-    return 1 - (1 - t) ** 3;
+    return 1 - (1 - t) ** 4.4;
   }
 
   function parseStatText(text) {
