@@ -215,6 +215,10 @@
     color: var(--color-white);
   }
 
+  body.nav-open .page--barnebys .oak-nav {
+    padding-bottom: 16px;
+  }
+
   .page--barnebys .oak-hero {
     gap: 40px;
     max-width: none;

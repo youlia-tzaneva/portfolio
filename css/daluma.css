@@ -217,6 +217,10 @@
     color: var(--color-white);
   }
 
+  body.nav-open .page--daluma .oak-nav {
+    padding-bottom: 16px;
+  }
+
   .page--daluma .oak-hero {
     gap: 40px;
     max-width: none;

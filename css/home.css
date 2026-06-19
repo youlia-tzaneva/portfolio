@@ -1053,6 +1053,10 @@ a {
     overflow: hidden;
   }
 
+  body.nav-open .hero > .nav-menu {
+    margin-top: calc(var(--hero-nav-gap) * -0.5);
+  }
+
   .hero.container {
     padding: var(--hero-pt) var(--section-padding) var(--hero-pb);
   }
