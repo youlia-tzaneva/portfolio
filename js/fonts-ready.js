@@ -15,8 +15,8 @@
     '400 16px "Domaine Display Narrow"',
     '700 16px "Domaine Display Narrow"',
     '400 16px CasualScript',
-    '400 16px Nunito',
-    '700 16px Nunito',
+    '400 16px Raleway',
+    '700 16px Raleway',
   ];
 
   Promise.all(
