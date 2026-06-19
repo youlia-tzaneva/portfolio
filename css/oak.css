@@ -622,7 +622,7 @@
     gap: 40px;
     max-width: none;
     margin: 0;
-    padding: 0 16px;
+    padding: 40px 16px 0;
   }
 
   .page--oak:not(.page--barnebys):not(.page--daluma) .oak-hero__title {
