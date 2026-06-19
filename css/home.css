@@ -390,10 +390,9 @@ a {
 
 .hero-flower__rotate--mobile {
   width: 88px;
-  height: 72px;
+  height: 124px;
   width: 55cqw;
-  height: 45cqh;
-  transform: rotate(51.13deg) skewX(5.27deg);
+  height: 77cqh;
 }
 
 .hero-flower--desktop,
