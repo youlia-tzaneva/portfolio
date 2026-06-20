@@ -164,7 +164,7 @@
 
 .oak-section__lead {
   font-size: 18px;
-  line-height: normal;
+  line-height: 1.6;
 }
 
 .oak-section:not(.oak-reflection) .oak-section__header .oak-section__lead {
@@ -174,7 +174,7 @@
 .oak-section__body,
 .oak-reflection .oak-section__lead {
   font-size: 16px;
-  line-height: normal;
+  line-height: 1.6;
 }
 
 .oak-section__body p + p {
@@ -218,7 +218,7 @@
   margin: 0;
   padding-left: 24px;
   font-size: 16px;
-  line-height: normal;
+  line-height: 1.6;
 }
 
 .oak-challenge-col li {
@@ -263,7 +263,7 @@
 
 .oak-card__body {
   font-size: 16px;
-  line-height: normal;
+  line-height: 1.6;
   width: 100%;
 }
 
@@ -349,7 +349,7 @@
 
 .oak-impact__lead {
   font-size: 18px;
-  line-height: normal;
+  line-height: 1.6;
   text-align: center;
 }
 
@@ -377,12 +377,12 @@
 
 .oak-stat__label {
   font-size: 16px;
-  line-height: normal;
+  line-height: 1.6;
 }
 
 .oak-impact__outcomes {
   font-size: 16px;
-  line-height: normal;
+  line-height: 1.6;
   text-align: center;
   width: 100%;
 }
@@ -435,7 +435,7 @@
   align-items: center;
   gap: 16px;
   font-size: 18px;
-  line-height: normal;
+  line-height: 1.6;
   color: var(--color-black);
 }
 

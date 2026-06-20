@@ -3,7 +3,7 @@
 .page--daluma .oak-challenge-col p {
   margin: 0;
   font-size: 16px;
-  line-height: normal;
+  line-height: 1.6;
 }
 
 .oak-section--challenge {
@@ -57,7 +57,7 @@
 .daluma-insight__follow {
   margin: 0;
   font-size: 16px;
-  line-height: normal;
+  line-height: 1.6;
 }
 
 .daluma-insight__quote {
