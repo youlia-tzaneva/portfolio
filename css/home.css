@@ -1216,6 +1216,7 @@ a {
 
   .project__title,
   .project--right .project__title {
+    order: unset;
     align-self: stretch;
     text-align: center;
     font-size: 72px;
@@ -1228,6 +1229,7 @@ a {
   }
 
   .project__details {
+    order: unset;
     gap: var(--project-row-gap);
   }
 
