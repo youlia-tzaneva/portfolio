@@ -1059,6 +1059,7 @@ a {
     --project-pb: 0px;
     --project-px: 0px;
     --project-row-gap: 40px;
+    --project-details-gap: calc(var(--project-row-gap) * 0.5);
     --project-content-gap: 16px;
     --project-desc-gap: 24px;
     --project-stack-gap: 100px;
@@ -1218,7 +1219,8 @@ a {
   .project--right .project__title {
     order: unset;
     align-self: stretch;
-    text-align: center;
+    padding-left: calc(1px + var(--project-details-gap));
+    text-align: left;
     font-size: 72px;
     line-height: 1;
   }
@@ -1230,7 +1232,7 @@ a {
 
   .project__details {
     order: unset;
-    gap: var(--project-row-gap);
+    gap: var(--project-details-gap);
   }
 
   .project__details .project__divider-v {
