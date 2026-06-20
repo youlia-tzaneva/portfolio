@@ -645,6 +645,22 @@ a {
   max-width: none;
 }
 
+@media (min-width: 1201px) {
+  .project--barnebys .project__divider,
+  .project--oak .project__divider {
+    --edge-bleed: calc(var(--project-px) + max(0px, (100vw - var(--max-width)) / 2));
+    width: calc(945px + var(--edge-bleed));
+    max-width: none;
+    margin-left: calc(-1 * var(--edge-bleed));
+  }
+
+  .project--right .project__divider {
+    --edge-bleed: calc(var(--project-px) + max(0px, (100vw - var(--max-width)) / 2));
+    width: calc(945px + var(--edge-bleed));
+    margin-right: calc(-1 * var(--edge-bleed));
+  }
+}
+
 .project__divider-v {
   display: none;
 }
