@@ -1247,6 +1247,7 @@ a {
   .script-link,
   .project__col--daluma .script-link {
     align-self: flex-start;
+    font-size: clamp(54px, 7.5vw, 90px);
   }
 
   .project__tags {
