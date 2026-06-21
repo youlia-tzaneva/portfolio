@@ -64,7 +64,7 @@ html.fonts-loading body {
   --project-tags-gap: 16px;
   --project-desc-gap: 24px;
   --project-col-rhythm: 60px;
-  --project-stack-gap: 80vh;
+  --project-stack-gap: 100vh;
   --project-stack-top: 0;
   --testimonials-gap: 60px;
   --testimonials-title-px: 300px;
@@ -121,6 +121,9 @@ a {
 /* Layout — full-bleed sections, 1440px content column */
 .page {
   width: 100%;
+}
+
+.hero.container {
   overflow-x: clip;
 }
 
@@ -516,14 +519,19 @@ a {
 /* Stacking scroll overlay — case studies scroll over one another */
 .projects-stack {
   position: relative;
+  display: block;
   isolation: isolate;
 }
 
 .project-stack-item {
   position: relative;
+  width: 100%;
 }
 
 .project-stack-item:not(:last-child) {
+  position: -webkit-sticky;
+  position: sticky;
+  top: var(--project-stack-top);
   padding-bottom: var(--project-stack-gap);
 }
 
@@ -539,19 +547,14 @@ a {
   z-index: 3;
 }
 
-.projects-stack .project-stack-item:not(:last-child) .project {
-  position: sticky;
-  top: var(--project-stack-top);
+.projects-stack .project {
   background-color: var(--color-cream);
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .projects-stack .project-stack-item:not(:last-child) .project {
+  .project-stack-item:not(:last-child) {
     position: relative;
     top: auto;
-  }
-
-  .project-stack-item:not(:last-child) {
     padding-bottom: 0;
   }
 }
@@ -1064,7 +1067,7 @@ a {
     --project-details-gap: calc(var(--project-row-gap) * 0.5);
     --project-content-gap: 16px;
     --project-desc-gap: 24px;
-    --project-stack-gap: 70vh;
+    --project-stack-gap: 100vh;
     --testimonials-gap: 60px;
     --testimonial-gap: 32px;
     --testimonial-author-gap: 16px;

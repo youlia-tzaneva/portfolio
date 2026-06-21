@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+(function () {
   const stack = document.querySelector(".projects-stack");
   if (!stack) return;
 
@@ -8,12 +8,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const items = Array.from(stack.querySelectorAll(".project-stack-item"));
   if (items.length < 2) return;
 
-  const MIN_RUNWAY = 120;
-
   function getRunway(project) {
-    const cardHeight = project.getBoundingClientRect().height;
+    const cardHeight = project.offsetHeight;
     const viewport = window.innerHeight;
-    return Math.max(MIN_RUNWAY, viewport - cardHeight, viewport * 0.35);
+
+    if (cardHeight >= viewport) {
+      return Math.round(viewport * 0.45);
+    }
+
+    return Math.max(160, Math.round(viewport - cardHeight + 80));
   }
 
   function updateStackGaps() {
@@ -24,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       const project = item.querySelector(".project");
-      if (!project) return;
+      if (!project || !project.offsetHeight) return;
 
       item.style.paddingBottom = `${getRunway(project)}px`;
     });
@@ -36,7 +39,18 @@ document.addEventListener("DOMContentLoaded", () => {
     resizeTimer = setTimeout(updateStackGaps, 100);
   }
 
-  updateStackGaps();
+  function init() {
+    requestAnimationFrame(() => {
+      requestAnimationFrame(updateStackGaps);
+    });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+
   window.addEventListener("resize", scheduleUpdate, { passive: true });
   window.addEventListener("load", updateStackGaps);
 
@@ -62,9 +76,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   reducedMotion.addEventListener("change", (event) => {
     if (event.matches) {
-      items.forEach((item) => item.style.removeProperty("padding-bottom"));
+      items.forEach((item) => {
+        item.style.removeProperty("padding-bottom");
+        item.style.removeProperty("position");
+        item.style.removeProperty("top");
+      });
       return;
     }
-    updateStackGaps();
+
+    init();
   });
-});
+})();
